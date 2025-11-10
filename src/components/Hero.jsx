@@ -3,17 +3,17 @@ import Spline from '@splinetool/react-spline';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-[80vh] flex items-center bg-black text-white overflow-hidden">
+    <section id="home" className="relative min-h-[85vh] flex items-center bg-black text-white overflow-hidden">
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/FduaNp3csZktbOi3/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <Spline scene="https://prod.spline.design/wwTRdG1D9CkNs368/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
       {/* Subtle gradient overlay for readability without blocking interaction */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-black"></div>
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black"></div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <div className="w-28 h-28 rounded-full ring-2 ring-[#00bfff]/60 overflow-hidden mb-6">
+          <div className="w-28 h-28 rounded-full ring-2 ring-[#00bfff]/60 overflow-hidden mb-6 bg-white/5">
             <img
               src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=400&auto=format&fit=crop"
               alt="Profile"
@@ -24,7 +24,7 @@ export default function Hero() {
             Software Developer
           </h1>
           <p className="text-slate-300 leading-relaxed max-w-2xl">
-            A highly motivated informatics undergraduate with hands-on experience in software development and machine learning. Skilled in TensorFlow, Python, and data visualization, with a strong focus on AI training and deployment. Dedicated to delivering precise and efficient solutions for real-world challenges.
+            I’m an informatics undergraduate focused on software development and machine learning. I build precise, efficient solutions using TensorFlow and Python, and love turning data into clear, actionable visuals. Motivated, hands-on, and dedicated to shipping real-world impact.
           </p>
         </div>
         <div className="md:justify-self-end">

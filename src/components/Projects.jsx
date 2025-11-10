@@ -1,31 +1,40 @@
 import React from 'react';
 
-const sampleProjects = [
+const projects = [
   {
     title: 'AI Image Classifier',
-    description: 'A TensorFlow-based CNN that classifies images with real-time visualization.',
+    description: 'TensorFlow CNN for image classification with live metrics and visualizations.',
     image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1200&auto=format&fit=crop',
     links: [
-      { label: 'GitHub', href: '#' },
       { label: 'Live Demo', href: '#' },
+      { label: 'GitHub Code', href: '#' },
     ],
   },
   {
-    title: 'Data Dashboard',
+    title: 'DataViz Dashboard',
     description: 'Interactive data visualization dashboard built with React and D3.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxEYXRhJTIwRGFzaGJvYXJkfGVufDB8MHx8fDE3NjI3MzU3NjR8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1627827963179-a8bb14121eb4?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxEYXRhVml6JTIwRGFzaGJvYXJkfGVufDB8MHx8fDE3NjI3MzYyMTN8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
     links: [
-      { label: 'GitHub', href: '#' },
       { label: 'Live Demo', href: '#' },
+      { label: 'GitHub Code', href: '#' },
     ],
   },
   {
-    title: 'ML Deployment Toolkit',
-    description: 'Streamlined deployment pipeline for serving ML models with FastAPI.',
+    title: 'ML Deployment Kit',
+    description: 'Production-ready FastAPI template for deploying ML models at scale.',
     image: 'https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=1200&auto=format&fit=crop',
     links: [
-      { label: 'GitHub', href: '#' },
       { label: 'Docs', href: '#' },
+      { label: 'GitHub Code', href: '#' },
+    ],
+  },
+  {
+    title: 'Time Series Forecaster',
+    description: 'End-to-end pipeline for forecasting and visualization of time series data.',
+    image: 'https://images.unsplash.com/photo-1561446121-0d1c45998f3a?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxUaW1lJTIwU2VyaWVzJTIwRm9yZWNhc3RlcnxlbnwwfDB8fHwxNzYyNzM2MjE4fDA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80',
+    links: [
+      { label: 'Live Demo', href: '#' },
+      { label: 'GitHub Code', href: '#' },
     ],
   },
 ];
@@ -57,10 +66,10 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold">Projects</h2>
-          <p className="text-slate-400 mt-2">A selection of work spanning AI, data visualization, and web development.</p>
+          <p className="text-slate-400 mt-2">A few things I’ve built across AI, data visualization, and web.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {sampleProjects.map((p) => (
+          {projects.map((p) => (
             <ProjectCard key={p.title} {...p} />
           ))}
         </div>
